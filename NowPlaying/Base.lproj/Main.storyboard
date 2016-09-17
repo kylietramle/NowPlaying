@@ -8,7 +8,7 @@
         <!--Movie Information-->
         <scene sceneID="hNY-be-npr">
             <objects>
-                <viewController id="Rwn-wi-abc" sceneMemberID="viewController">
+                <viewController id="Rwn-wi-abc" customClass="MovieDetailController" customModule="NowPlaying" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CtC-hB-UBB"/>
                         <viewControllerLayoutGuide type="bottom" id="GC5-Sp-dgh"/>
@@ -51,6 +51,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Movie Information" id="ooO-Hq-uJZ"/>
+                    <connections>
+                        <outlet property="movieBackDrop" destination="FYI-Tt-aS8" id="h1J-pT-4fD"/>
+                        <outlet property="movieDescription" destination="LIt-BR-aw5" id="JSG-mC-AjM"/>
+                        <outlet property="movieTitle" destination="7eq-qL-xWu" id="GlD-BZ-VDr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2q-iC-TBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +81,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="192"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KzJ-m3-7R0" id="XIp-eO-dez">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="192"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="191.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suicidesquad" translatesAutoresizingMaskIntoConstraints="NO" id="3Xd-eY-Lfc">
