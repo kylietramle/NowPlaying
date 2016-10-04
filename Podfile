@@ -8,5 +8,7 @@ target 'NowPlaying' do
   # Pods for NowPlaying
   pod 'Alamofire', '~> 3.5.0'
   pod 'AlamofireImage', '~> 2.5'
+  pod 'RealmSwift', '0.98.8'
+  
 
 end

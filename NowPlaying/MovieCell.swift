@@ -16,14 +16,13 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var movieTitleLabel: UILabel!
     
     var movie : Movie! {
+        // initializing & assigning cell properties
         didSet {
             movieTitleLabel.text = movie.movieTitle
             
             if(movie.moviePosterUrl != nil) {
-                moviePosterImageView.af_setImageWithURL(movie.moviePosterUrl!)
-                print(movie.moviePosterUrl)
+                moviePosterImageView.af_setImageWithURL(NSURL(string: movie!.moviePosterUrl!)!)
             }
-            print(movie.moviePosterUrl)
         }
     }
 }

@@ -15,7 +15,7 @@ class MovieDetailController: UIViewController {
     @IBOutlet weak var movieDescription: UILabel!
     @IBOutlet weak var movieTitle: UILabel!
     
-    var movie: Movie?
+    var movie: Movie?       // local movie variable
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class MovieDetailController: UIViewController {
         self.movieDescription.text = movie?.movieOverview
         
         if(movie?.movieBackdropPathUrl != nil) {
-            movieBackDrop.af_setImageWithURL(movie!.movieBackdropPathUrl!)
+            movieBackDrop.af_setImageWithURL(NSURL(string: movie!.movieBackdropPathUrl!)!)
         }
     }
     

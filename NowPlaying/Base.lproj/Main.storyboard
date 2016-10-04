@@ -17,21 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ss-landscape" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Tt-aS8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Tt-aS8">
                                 <rect key="frame" x="0.0" y="64" width="375" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="ydp-Hq-58I"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eq-qL-xWu">
-                                <rect key="frame" x="129" y="294" width="117" height="29"/>
-                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIt-BR-aw5">
+                                <rect key="frame" x="38" y="381" width="300" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Xl-rt-6MK"/>
+                                    <constraint firstAttribute="height" constant="250" id="LsV-YY-Uxf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIt-BR-aw5">
-                                <rect key="frame" x="20" y="369" width="335" height="262"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eq-qL-xWu">
+                                <rect key="frame" x="134" y="294" width="107" height="27"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -39,15 +43,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="FYI-Tt-aS8" firstAttribute="leading" secondItem="CXf-ls-jrE" secondAttribute="leading" id="15L-Se-mvr"/>
+                            <constraint firstItem="LIt-BR-aw5" firstAttribute="top" secondItem="7eq-qL-xWu" secondAttribute="bottom" constant="60" id="1Bp-7O-nXf"/>
                             <constraint firstAttribute="trailing" secondItem="FYI-Tt-aS8" secondAttribute="trailing" id="3Cm-Xm-Zbu"/>
-                            <constraint firstItem="7eq-qL-xWu" firstAttribute="centerX" secondItem="CXf-ls-jrE" secondAttribute="centerX" id="3jU-FE-6Gj"/>
-                            <constraint firstItem="LIt-BR-aw5" firstAttribute="centerX" secondItem="CXf-ls-jrE" secondAttribute="centerX" id="5v7-xs-KQs"/>
-                            <constraint firstItem="7eq-qL-xWu" firstAttribute="top" secondItem="FYI-Tt-aS8" secondAttribute="bottom" constant="30" id="jMq-eS-Jke"/>
+                            <constraint firstItem="7eq-qL-xWu" firstAttribute="top" secondItem="FYI-Tt-aS8" secondAttribute="bottom" constant="30" id="7ci-GO-cFf"/>
+                            <constraint firstItem="7eq-qL-xWu" firstAttribute="centerX" secondItem="CXf-ls-jrE" secondAttribute="centerX" id="RgV-M4-L1c"/>
+                            <constraint firstItem="LIt-BR-aw5" firstAttribute="centerX" secondItem="CXf-ls-jrE" secondAttribute="centerX" id="Rho-Qs-Toq"/>
                             <constraint firstItem="FYI-Tt-aS8" firstAttribute="top" secondItem="CtC-hB-UBB" secondAttribute="bottom" id="kT4-Wz-Bbs"/>
-                            <constraint firstAttribute="trailing" secondItem="LIt-BR-aw5" secondAttribute="trailing" constant="20" id="ohf-SQ-z3v"/>
-                            <constraint firstItem="LIt-BR-aw5" firstAttribute="top" secondItem="7eq-qL-xWu" secondAttribute="bottom" constant="46" id="v4b-dn-XEP"/>
-                            <constraint firstItem="GC5-Sp-dgh" firstAttribute="top" secondItem="LIt-BR-aw5" secondAttribute="bottom" constant="36" id="yOe-II-uw7"/>
-                            <constraint firstItem="LIt-BR-aw5" firstAttribute="leading" secondItem="CXf-ls-jrE" secondAttribute="leading" constant="20" id="yVh-9f-oVp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Movie Details" id="ooO-Hq-uJZ"/>
@@ -81,28 +82,31 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="192"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KzJ-m3-7R0" id="XIp-eO-dez">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="191.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="192"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suicidesquad" translatesAutoresizingMaskIntoConstraints="NO" id="3Xd-eY-Lfc">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Xd-eY-Lfc">
                                                     <rect key="frame" x="20" y="30" width="90" height="133"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="DIr-Qi-gdC"/>
                                                         <constraint firstAttribute="height" constant="133" id="YJf-f7-pO7"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-WF-Yeu">
-                                                    <rect key="frame" x="130" y="83" width="192" height="27"/>
-                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-WF-Yeu">
+                                                    <rect key="frame" x="130" y="46" width="200" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="3uN-aJ-yEu"/>
+                                                        <constraint firstAttribute="height" constant="100" id="Bj7-qU-BI3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="3NX-WF-Yeu" secondAttribute="trailing" constant="20" id="BYs-Rw-6Xt"/>
-                                                <constraint firstItem="3NX-WF-Yeu" firstAttribute="centerY" secondItem="XIp-eO-dez" secondAttribute="centerY" id="Tep-FD-YuD"/>
+                                                <constraint firstItem="3NX-WF-Yeu" firstAttribute="leading" secondItem="3Xd-eY-Lfc" secondAttribute="trailing" constant="20" id="MRG-p8-LnB"/>
+                                                <constraint firstItem="3NX-WF-Yeu" firstAttribute="centerY" secondItem="XIp-eO-dez" secondAttribute="centerY" id="TSB-Ri-hUX"/>
                                                 <constraint firstItem="3Xd-eY-Lfc" firstAttribute="leading" secondItem="XIp-eO-dez" secondAttribute="leading" constant="20" id="h7p-f3-K5x"/>
-                                                <constraint firstItem="3NX-WF-Yeu" firstAttribute="leading" secondItem="3Xd-eY-Lfc" secondAttribute="trailing" constant="20" id="uzt-2b-THO"/>
                                                 <constraint firstItem="3Xd-eY-Lfc" firstAttribute="centerY" secondItem="XIp-eO-dez" secondAttribute="centerY" id="wQu-g5-DVe"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -152,8 +156,4 @@
             <point key="canvasLocation" x="134" y="357"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ss-landscape" width="640" height="320"/>
-        <image name="suicidesquad" width="1200" height="1778"/>
-    </resources>
 </document>
