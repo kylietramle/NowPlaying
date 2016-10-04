@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Movie Information-->
+        <!--Movie Details-->
         <scene sceneID="hNY-be-npr">
             <objects>
                 <viewController id="Rwn-wi-abc" customClass="MovieDetailController" customModule="NowPlaying" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,15 +23,15 @@
                                     <constraint firstAttribute="height" constant="200" id="ydp-Hq-58I"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" misplaced="YES" text="Suicide Squad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eq-qL-xWu">
-                                <rect key="frame" x="131" y="294" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eq-qL-xWu">
+                                <rect key="frame" x="129" y="294" width="117" height="29"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIt-BR-aw5">
-                                <rect key="frame" x="20" y="385" width="335" height="262"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIt-BR-aw5">
+                                <rect key="frame" x="20" y="369" width="335" height="262"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -45,12 +45,12 @@
                             <constraint firstItem="7eq-qL-xWu" firstAttribute="top" secondItem="FYI-Tt-aS8" secondAttribute="bottom" constant="30" id="jMq-eS-Jke"/>
                             <constraint firstItem="FYI-Tt-aS8" firstAttribute="top" secondItem="CtC-hB-UBB" secondAttribute="bottom" id="kT4-Wz-Bbs"/>
                             <constraint firstAttribute="trailing" secondItem="LIt-BR-aw5" secondAttribute="trailing" constant="20" id="ohf-SQ-z3v"/>
-                            <constraint firstItem="LIt-BR-aw5" firstAttribute="top" secondItem="7eq-qL-xWu" secondAttribute="bottom" constant="70" id="v4b-dn-XEP"/>
-                            <constraint firstItem="GC5-Sp-dgh" firstAttribute="top" secondItem="LIt-BR-aw5" secondAttribute="bottom" constant="20" id="yOe-II-uw7"/>
+                            <constraint firstItem="LIt-BR-aw5" firstAttribute="top" secondItem="7eq-qL-xWu" secondAttribute="bottom" constant="46" id="v4b-dn-XEP"/>
+                            <constraint firstItem="GC5-Sp-dgh" firstAttribute="top" secondItem="LIt-BR-aw5" secondAttribute="bottom" constant="36" id="yOe-II-uw7"/>
                             <constraint firstItem="LIt-BR-aw5" firstAttribute="leading" secondItem="CXf-ls-jrE" secondAttribute="leading" constant="20" id="yVh-9f-oVp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Movie Information" id="ooO-Hq-uJZ"/>
+                    <navigationItem key="navigationItem" title="Movie Details" id="ooO-Hq-uJZ"/>
                     <connections>
                         <outlet property="movieBackDrop" destination="FYI-Tt-aS8" id="h1J-pT-4fD"/>
                         <outlet property="movieDescription" destination="LIt-BR-aw5" id="JSG-mC-AjM"/>
@@ -91,9 +91,9 @@
                                                         <constraint firstAttribute="height" constant="133" id="YJf-f7-pO7"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Suicide Squad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-WF-Yeu">
-                                                    <rect key="frame" x="130" y="81" width="225" height="30"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-WF-Yeu">
+                                                    <rect key="frame" x="130" y="83" width="192" height="27"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

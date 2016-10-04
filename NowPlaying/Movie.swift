@@ -14,8 +14,8 @@ class Movie: NSObject {
     
     var moviePosterUrl: NSURL?
     var movieTitle: String?
-    var moviewOverview: String?
-    var moviewBackdropPathUrl: NSURL?
+    var movieOverview: String?
+    var movieBackdropPathUrl: NSURL?
     
     init(dictionary: NSDictionary) {
         
@@ -26,14 +26,14 @@ class Movie: NSObject {
         }
         
         if let moviewBackdropPathString = dictionary["backdrop_path"] as? String {
-            moviewBackdropPathUrl = NSURL(string: baseImageURL + moviewBackdropPathString)!
+            movieBackdropPathUrl = NSURL(string: baseImageURL + moviewBackdropPathString)!
         } else {
-            moviewBackdropPathUrl = nil
+            movieBackdropPathUrl = nil
         }
         
         self.movieTitle = dictionary["title"] as? String
         
-        self.moviewOverview = dictionary["overview"] as? String
+        self.movieOverview = dictionary["overview"] as? String
         
     }
     

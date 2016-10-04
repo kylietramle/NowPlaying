@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MovieDetailController: UIViewController {
 
@@ -20,10 +21,10 @@ class MovieDetailController: UIViewController {
         super.viewDidLoad()
 
         self.movieTitle.text = movie?.movieTitle
-        self.movieDescription.text = movie?.moviewOverview
+        self.movieDescription.text = movie?.movieOverview
         
-        if(movie?.moviewBackdropPathUrl != nil) {
-            movieBackDrop.af_setImageWithURL(movie!.moviewBackdropPathUrl!)
+        if(movie?.movieBackdropPathUrl != nil) {
+            movieBackDrop.af_setImageWithURL(movie!.movieBackdropPathUrl!)
         }
     }
     

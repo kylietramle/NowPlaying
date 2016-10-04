@@ -15,7 +15,7 @@
 		61A388081D849E1400ED3EC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A388061D849E1400ED3EC0 /* LaunchScreen.storyboard */; };
 		61A388101D84A3F800ED3EC0 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A3880F1D84A3F800ED3EC0 /* MovieCell.swift */; };
 		61F124E61D8DEEB800F7152A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F124E51D8DEEB800F7152A /* Movie.swift */; };
-		61F124E81D8DF75E00F7152A /* MovieDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F124E71D8DF75E00F7152A /* MovieDetailController.swift */; };
+		61F124E81D8DF75E00F7152A /*  MovieDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F124E71D8DF75E00F7152A /*  MovieDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		61A388091D849E1400ED3EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61A3880F1D84A3F800ED3EC0 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		61F124E51D8DEEB800F7152A /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		61F124E71D8DF75E00F7152A /* MovieDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailController.swift; sourceTree = "<group>"; };
+		61F124E71D8DF75E00F7152A /*  MovieDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " MovieDetailController.swift"; sourceTree = "<group>"; };
 		95D5CCC0C017A760C43234C1 /* Pods_NowPlaying.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NowPlaying.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57BA9D05B06F0FD4702E39B /* Pods-NowPlaying.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NowPlaying.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NowPlaying/Pods-NowPlaying.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +80,7 @@
 				61A387FF1D849E1400ED3EC0 /* ViewController.swift */,
 				61F124E51D8DEEB800F7152A /* Movie.swift */,
 				61A388011D849E1400ED3EC0 /* Main.storyboard */,
-				61F124E71D8DF75E00F7152A /* MovieDetailController.swift */,
+				61F124E71D8DF75E00F7152A /*  MovieDetailController.swift */,
 				61A3880F1D84A3F800ED3EC0 /* MovieCell.swift */,
 				61A388041D849E1400ED3EC0 /* Assets.xcassets */,
 				61A388061D849E1400ED3EC0 /* LaunchScreen.storyboard */,
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A388001D849E1400ED3EC0 /* ViewController.swift in Sources */,
-				61F124E81D8DF75E00F7152A /* MovieDetailController.swift in Sources */,
+				61F124E81D8DF75E00F7152A /*  MovieDetailController.swift in Sources */,
 				61A387FE1D849E1400ED3EC0 /* AppDelegate.swift in Sources */,
 				61F124E61D8DEEB800F7152A /* Movie.swift in Sources */,
 				61A388101D84A3F800ED3EC0 /* MovieCell.swift in Sources */,
