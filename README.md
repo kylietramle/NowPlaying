@@ -22,4 +22,4 @@ Open to suggestions and feedback.
 
 ## Resources
 
-- [TMDb's API]()
+- [TMDb's API](https://www.themoviedb.org/documentation/api)
