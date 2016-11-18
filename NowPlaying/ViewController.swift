@@ -25,6 +25,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+         tableView.backgroundColor = UIColor(r: 18, g: 114, b: 123)
+        
         // location of Realm DB
         print(Realm.Configuration.defaultConfiguration.description)
         
@@ -43,6 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies!.count ?? 0
     }
@@ -51,6 +54,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
         cell.movie = movies![indexPath.row]
         cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.backgroundColor = UIColor.clearColor()
+        cell.textLabel?.font = UIFont.boldSystemFontOfSize(16)
+    
 
         return cell
     }
@@ -82,4 +88,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         movieController.movie = movie
     }
 }
+
+extension UIColor {
+    convenience init(r: CGFloat, g: CGFloat, b: CGFloat) {
+        self.init(red: r/255, green: g/255, blue: b/255, alpha: 1)
+    }
+}
+
 

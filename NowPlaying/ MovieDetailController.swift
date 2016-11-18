@@ -19,7 +19,9 @@ class MovieDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.backgroundColor = UIColor(r: 18, g: 114, b: 123)
+        
         self.movieTitle.text = movie?.movieTitle
         self.movieDescription.text = movie?.movieOverview
         

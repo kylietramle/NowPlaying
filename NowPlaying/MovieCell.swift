@@ -14,6 +14,7 @@ class MovieCell: UITableViewCell {
     
     @IBOutlet weak var moviePosterImageView: UIImageView!
     @IBOutlet weak var movieTitleLabel: UILabel!
+
     
     var movie : Movie! {
         // initializing & assigning cell properties
